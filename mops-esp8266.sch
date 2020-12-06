@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L SBC-relay-5v-rescue:Mounting_Hole-Mechanical MK1
+L mops-esp8266-rescue:Mounting_Hole-Mechanical-SBC-relay-5v-rescue MK1
 U 1 1 5834FB2E
 P 3000 7200
 F 0 "MK1" H 3100 7246 50  0000 L CNN
@@ -25,7 +25,7 @@ F 3 "" H 3000 7200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SBC-relay-5v-rescue:Mounting_Hole-Mechanical MK3
+L mops-esp8266-rescue:Mounting_Hole-Mechanical-SBC-relay-5v-rescue MK3
 U 1 1 5834FBEF
 P 3450 7200
 F 0 "MK3" H 3550 7246 50  0000 L CNN
@@ -36,7 +36,7 @@ F 3 "" H 3450 7200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SBC-relay-5v-rescue:Mounting_Hole-Mechanical MK2
+L mops-esp8266-rescue:Mounting_Hole-Mechanical-SBC-relay-5v-rescue MK2
 U 1 1 5834FC19
 P 3000 7400
 F 0 "MK2" H 3100 7446 50  0000 L CNN
@@ -47,7 +47,7 @@ F 3 "" H 3000 7400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SBC-relay-5v-rescue:Mounting_Hole-Mechanical MK4
+L mops-esp8266-rescue:Mounting_Hole-Mechanical-SBC-relay-5v-rescue MK4
 U 1 1 5834FC4F
 P 3450 7400
 F 0 "MK4" H 3550 7446 50  0000 L CNN
@@ -61,7 +61,7 @@ Text Notes 3000 7050 0    50   ~ 0
 Mounting Holes
 NoConn ~ 1200 1600
 $Comp
-L Connector:USB_B_Micro J1
+L mops-esp8266-rescue:USB_B_Micro-Connector J1
 U 1 1 5C7C3256
 P 900 1400
 F 0 "J1" H 955 1867 50  0000 C CNN
@@ -290,7 +290,7 @@ U 1 1 5DB09F17
 P 4600 900
 F 0 "SW1" H 4750 1000 50  0000 C CNN
 F 1 "SW_Flash" H 4600 1094 50  0000 C CNN
-F 2 "w_switch:smd_push" H 4600 1100 50  0001 C CNN
+F 2 "zsun-symbols:switch_4x4x1.5_real-5x5x1.5" H 4600 1100 50  0001 C CNN
 F 3 "~" H 4600 1100 50  0001 C CNN
 	1    4600 900 
 	1    0    0    -1  
@@ -849,7 +849,7 @@ F 3 "" H 4450 4500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L SBC-relay-5v-rescue:Mounting_Hole-Mechanical MK5
+L mops-esp8266-rescue:Mounting_Hole-Mechanical-SBC-relay-5v-rescue MK5
 U 1 1 5F933A92
 P 3900 7400
 F 0 "MK5" H 4000 7446 50  0000 L CNN
@@ -993,7 +993,7 @@ L Device:R_Small R12
 U 1 1 5F963A54
 P 4400 5150
 F 0 "R12" V 4500 5150 50  0000 C CNN
-F 1 "10k" V 4300 5150 50  0000 C CNN
+F 1 "1k" V 4300 5150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4400 5150 50  0001 C CNN
 F 3 "~" H 4400 5150 50  0001 C CNN
 	1    4400 5150
@@ -1025,7 +1025,7 @@ Connection ~ 5000 5300
 Wire Wire Line
 	5000 5300 5100 5300
 $Comp
-L SBC-relay-5v-rescue:Mounting_Hole-Mechanical MK6
+L mops-esp8266-rescue:Mounting_Hole-Mechanical-SBC-relay-5v-rescue MK6
 U 1 1 5F973620
 P 4300 7400
 F 0 "MK6" H 4400 7446 50  0000 L CNN
@@ -1049,7 +1049,7 @@ L Transistor_FET:2N7002E Q2
 U 1 1 5F9B7836
 P 4700 5200
 F 0 "Q2" V 4949 5200 50  0000 C CNN
-F 1 "2N7002E/AO3400" V 5040 5200 50  0000 C CNN
+F 1 "2N7002" V 5040 5200 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 4900 5125 50  0001 L CIN
 F 3 "http://www.diodes.com/assets/Datasheets/ds30376.pdf" H 4700 5200 50  0001 L CNN
 	1    4700 5200
@@ -1078,7 +1078,7 @@ L Device:R_Small R13
 U 1 1 5F979778
 P 5000 5150
 F 0 "R13" V 5100 5150 50  0000 C CNN
-F 1 "10k" V 4900 5150 50  0000 C CNN
+F 1 "1k" V 4900 5150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5000 5150 50  0001 C CNN
 F 3 "~" H 5000 5150 50  0001 C CNN
 	1    5000 5150
@@ -1249,7 +1249,7 @@ U 1 1 5F85778B
 P 7250 4250
 F 0 "D4" H 7050 4500 50  0000 L CNN
 F 1 "WS2812B" H 7300 4500 50  0000 L CNN
-F 2 "zsun-symbols:LED_WS2812B_3.5x3.5mm" H 7300 3950 50  0001 L TNN
+F 2 "zsun-symbols:LED_DY-S352818_RGBC_6812-2T" H 7300 3950 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7350 3875 50  0001 L TNN
 	1    7250 4250
 	1    0    0    -1  
@@ -1260,7 +1260,7 @@ U 1 1 5F856569
 P 6650 4250
 F 0 "D3" H 6450 4500 50  0000 L CNN
 F 1 "WS2812B" H 6700 4500 50  0000 L CNN
-F 2 "zsun-symbols:LED_WS2812B_3.5x3.5mm" H 6700 3950 50  0001 L TNN
+F 2 "zsun-symbols:LED_DY-S352818_RGBC_6812-2T" H 6700 3950 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6750 3875 50  0001 L TNN
 	1    6650 4250
 	1    0    0    -1  
@@ -1271,7 +1271,7 @@ U 1 1 5F855DCD
 P 6050 4250
 F 0 "D2" H 5850 4500 50  0000 L CNN
 F 1 "WS2812B" H 6100 4500 50  0000 L CNN
-F 2 "zsun-symbols:LED_WS2812B_3.5x3.5mm" H 6100 3950 50  0001 L TNN
+F 2 "zsun-symbols:LED_DY-S352818_RGBC_6812-2T" H 6100 3950 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6150 3875 50  0001 L TNN
 	1    6050 4250
 	1    0    0    -1  
@@ -1282,7 +1282,7 @@ U 1 1 5F8537C0
 P 5450 4250
 F 0 "D1" H 5250 4500 50  0000 L CNN
 F 1 "WS2812B" H 5500 4500 50  0000 L CNN
-F 2 "zsun-symbols:LED_WS2812B_3.5x3.5mm" H 5500 3950 50  0001 L TNN
+F 2 "zsun-symbols:LED_DY-S352818_RGBC_6812-2T" H 5500 3950 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5550 3875 50  0001 L TNN
 	1    5450 4250
 	1    0    0    -1  
